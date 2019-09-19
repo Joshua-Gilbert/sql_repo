@@ -1,0 +1,28 @@
+select * from tracks; --this query can also be seen in the table data
+
+select Name, Composer from tracks; --this query allows me to see only the Name and the Composer from all the files that are in the "tracks" table 
+select TrackID, Name, AlbumId from tracks; --the logic is the same as from what was written above
+select TrackID, Name, AlbumId from tracks where AlbumId == 3; -- this last command "where" allows me to put another filter in my query, therefore I can only see the files whose AlbumId is equal to "3"
+select TrackID, Name from tracks where AlbumId == 3; -- this is an implicity filter that I put on my query, in order words, I can make filters with columns that i don't want to be displayed 
+select Name from tracks where composer == James Hetfield; --this statement will cause an error because what I asked doesn't match with what they have on the database 
+
+select * from tracks order by name; 
+select * from tracks order by name asc; -- same as what was displayed above
+select * from tracks order by name desc;  -- the opposite of what was displayed on the queries above    
+select * from tracks order by TrackId desc; -- filter by TrackId in a descendent order
+select * from tracks order by bytes asc;
+
+select * from tracks inner join albums on Title; --this query allows me to see information from the table "tracks" and also some information from the table "albums" 
+                                                 --this is useful when the tables contain different informations
+select * from tracks;
+select *from albums;     
+select Name, GenreId, Composer,Title from tracks inner join albums on tracks.AlbumId = albums.AlbumId; --Note that Title is not from the "tracks" table but from the "albums" table
+
+select * from tracks;
+insert into tracks (TrackId, Name, Composer,MediaTypeId,Milliseconds,UnitPrice) values (3504, "TESTE", "GUILHERME", 1,100000, 0.99);
+--The command used above allows you to insert a new information on the database files, mind that some columns can't be NULL therefore you must put some information on it
+update tracks set Composer = "Tom Brady" where TrackId = 3504;
+--The command used above allows me to change an information os a pre-existent file
+select*from tracks; 
+delete from tracks where TrackId = 3504;
+select*from tracks;

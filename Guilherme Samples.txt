@@ -1,3 +1,6 @@
+-- Created by Campos Guilherme
+
+
 select * from tracks; --this query can also be seen in the table data
 
 select Name, Composer from tracks; --this query allows me to see only the Name and the Composer from all the files that are in the "tracks" table 

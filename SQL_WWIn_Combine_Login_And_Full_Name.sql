@@ -3,6 +3,7 @@
  SELECT UPPER(FullName) + ' ' + UPPER(LogonName) AS FullName
 
 FROM   Application.People
+
 --Sample Output
 --FullName
 --DATA CONVERSION ONLY NO LOGON

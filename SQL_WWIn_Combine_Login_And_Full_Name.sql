@@ -1,3 +1,5 @@
+ --Combines the full name of the person with their login info
+ 
  SELECT UPPER(FullName) + ' ' + UPPER(LogonName) AS FullName
 
 FROM   Application.People

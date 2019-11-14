@@ -4,6 +4,7 @@ GO
 SELECT *
 FROM Sales.Customers
 ORDER BY PostalAddressLine1 ASC;
+-- Orders in acending order by addresses
 
 --Sample Output:
 -- HEADERS:
@@ -32,3 +33,5 @@ ORDER BY PostalAddressLine1 ASC;
 --50	Tailspin Toys (Hambleton, WV)	1	3	1	1099	1100	3	14380	14380	NULL	2013-01-01	0.000	0	0	7	(304) 555-0100	(304) 555-0101			
 --http://www.tailspintoys.com/Hambleton	Unit 257	1715 Samaniego Street	90087	0xE6100000010CE88C83A6808A43402C76453A4DE953C0	
 --PO Box 1053	Chatterjeeville	90087	1	2013-01-01 00:00:00.0000000	9999-12-31 23:59:59.9999999
+
+-- Adapted from:https://docs.microsoft.com/en-us/sql/t-sql/queries/select-examples-transact-sql?view=sql-server-ver15

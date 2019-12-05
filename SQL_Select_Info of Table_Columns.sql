@@ -1,0 +1,5 @@
+--SQL select of info from table columns 
+
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS  
+  
+WHERE INFORMATION_SCHEMA.COLUMNS.TABLE_NAME=’Table_Name’  

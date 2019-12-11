@@ -11,3 +11,8 @@ FROM     Sales.Customers INNER JOIN
 --Juan Morse	(423) 555-0100
 --Ebru Erdogan	(405) 555-0100
 --Victoria Lacusta(212) 555-0100
+
+--Additionally if use previous command to get all tables with a view:
+--VIEW_CATALOG	VIEW_SCHEMA	VIEW_NAME	TABLE_CATALOG	TABLE_SCHEMA	TABLE_NAME
+--WideWorldImporters	dbo	Sample_View	WideWorldImporters	Sales	Customers
+--WideWorldImporters	dbo	Sample_View	WideWorldImporters	Sales	Customers_Archive

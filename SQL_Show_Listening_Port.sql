@@ -14,6 +14,7 @@ EXEC   xp_instance_regread
 @key        =
 'Software\Microsoft\Microsoft SQL Server\MSSQLServer\SuperSocketNetLib\Tcp\IpAll',
 @value_name = 'TcpDynamicPorts',
+--Sub @value_name = 'TcpPort' if dynamic port service disabled
 @value      = @portNumber OUTPUT
  
 SELECT [Port Number] = @portNumber
